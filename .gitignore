@@ -1,0 +1,12 @@
+# Ignore compiled binaries
+*.exe
+*.o
+
+
+# Ignore log files
+*.log
+
+node_modules/
+
+bearTokenAndAccountInfo.json
+

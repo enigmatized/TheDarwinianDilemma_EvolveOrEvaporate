@@ -1,0 +1,33 @@
+#FROM node:18-alpine 
+#FROM node:lts-alpine
+
+
+# Install npm
+FROM node:lts-alpine
+WORKDIR /app
+COPY package.json ./
+RUN  npm install
+COPY . ./ 
+EXPOSE 6001
+CMD ["npm", "run", "serve", "--", "--port", "6001"]
+
+
+
+#WORKDIR /app
+#COPY package*.json ./
+#RUN npm install
+#
+#RUN npm install @vue/cli@3.7.0 -g
+#COPY . ./
+#RUN npm run build
+
+#ENV PATH /app/node_modules/.bin:$PATH
+#
+## install and cache app dependencies
+#COPY package.json /app/package.json
+#RUN npm install
+#RUN npm install @vue/cli@3.7.0 -g
+#
+## start app
+#EXPOSE 6001
+#CMD ["npm", "run", "serve"]

@@ -1,0 +1,97 @@
+version: '3'
+
+services:
+
+  # Proxies requests to internal services
+  reverse-proxy:
+    image: nginx:1.17.10
+    container_name: reverse_proxy_demo
+    depends_on:
+        - temperature-service
+        - precip-service
+        - go-service
+        - vol-service
+        - react-service
+        - vue3-service-copy
+    volumes:
+      - ./reverse_proxy/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+
+  react-service:
+          image: react-service
+          container_name: react-service
+          build: 
+                context: ./react_service
+          ports:
+                  - 8021:8021
+          
+  vue3-service-copy: 
+        image: vue3-service-copy
+        container_name: vue3-service-copy
+        build:
+                context: ./vue3_service_copy
+        ports: 
+                - 8080:80
+  
+            
+          #vue3-service:
+          #  build:
+          #    context: "./vue3_service"
+          #  image: vue3-service
+          #  #env_file:
+          #  #  - "./vue3_service/.env"
+          #  ports:
+          #    - 6000:8089
+  #generates weather reports
+  #weather-report:
+  #  image: weather-report
+  #  container_name: weather-report
+  #  build:
+  #    context: ./weather_report
+  #  depends_on:
+  #      - temperature-service
+  #      - precip-service
+  #  ports:
+  #    - 8080:80
+  #  restart: on-failure
+
+
+  # Retrieves the temperature
+  temperature-service:
+    image: temperature-service
+    container_name: temperature-service
+    build:
+      context: ./temperature_service
+    ports:
+      - 5001:5001
+    restart: on-failure
+
+
+  # Generates a precipitation estimate
+  precip-service:
+    image: precip-service
+    container_name: precip-service
+    build:
+      context: ./precip_service
+    ports:
+      - 5002:5002
+    restart: on-failure
+  
+  vol-service:
+          image: vol-service
+          container_name: vol-service
+          build:
+                  context: ./vol_service
+          ports: 
+                - 5003:5003
+          restart: on-failure
+          
+  #Serves Go Backend
+  go-service:
+    image: go-service
+    container_name: go-service
+    build:
+      context: ./go_service
+    ports:
+            - 8081:8081
