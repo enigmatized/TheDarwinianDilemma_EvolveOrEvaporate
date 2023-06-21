@@ -1,5 +1,5 @@
 
-# With CHATgpt, building small toy projects has become remarkably effortless. Initially, this started as a project to explore Nginx reverse proxy and Docker, but it has since evolved into a compilation of small toy applications, quantitative trading research, a live trading bot, and the outcomes of numerous self-imposed hackathons.
+### With CHATgpt, building small toy projects has become remarkably effortless. Initially, this started as a project to explore Nginx reverse proxy and Docker, but it has since evolved into a compilation of small toy applications, quantitative trading research, a live trading bot, and the outcomes of numerous self-imposed hackathons.
 
 
 
