@@ -1,11 +1,12 @@
 # Ignore compiled binaries
 *.exe
 *.o
-
+*o.json
+*.swp
 
 # Ignore log files
 *.log
-
+*.ME
 node_modules/
 
 bearTokenAndAccountInfo.json
