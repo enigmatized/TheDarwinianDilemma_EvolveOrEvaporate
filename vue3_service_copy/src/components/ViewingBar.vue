@@ -23,7 +23,7 @@ export default {
       buttons: [
         { id: 1, label: "About This Project", component: AboutThisProject},
         { id: 2, label: "Trading Signals", component: TradingSignals},
-        { id: 3, label: "Self Imposed Hackathons", component: SelfImposedHackathon},
+        { id: 3, label: "Learning Projects", component: SelfImposedHackathon},
         { id: 4, label: "About Me", component: AboutMe},
         // Add more buttons as needed
       ],

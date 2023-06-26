@@ -3,7 +3,7 @@
     <h1>Trading Signals</h1>
     <!-- Add your content here -->
     <!--The temperature will be: {{ temperature }} -->
-    <img :src="imageSrc1" alt="Image" />
+    <img :src="imageSrc1" alt="Give me 20 seconds to load, this is scraping data from a live exchage then computing the correct values" />
   </div>
 </template>
 

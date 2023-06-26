@@ -1,0 +1,34 @@
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:2:13: object http is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.Http[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:3:13: object http is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.model.HttpMethods._[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:4:13: object http is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.server.Directives._[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:5:13: object http is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.server.Route[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:6:13: object stream is not a member of package akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.stream.ActorMaterializer[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:13:33: not found: value ActorMaterializer[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val materializer = ActorMaterializer()[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:16:17: not found: type Route[0m
+[0m[[0m[31merror[0m] [0m[0m    val routes: Route = path("hello") {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:16:25: not found: value path[0m
+[0m[[0m[31merror[0m] [0m[0m    val routes: Route = path("hello") {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:17:7: not found: value get[0m
+[0m[[0m[31merror[0m] [0m[0m      get {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:18:9: not found: value complete[0m
+[0m[[0m[31merror[0m] [0m[0m        complete("Hello, World!")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/GrowOrDieTime/scala_service/HelloWorld.scala:22:25: not found: value Http[0m
+[0m[[0m[31merror[0m] [0m[0m    val bindingFuture = Http().bindAndHandle(routes, "localhost", 8080)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
