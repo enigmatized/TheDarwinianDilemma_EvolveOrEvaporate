@@ -2,7 +2,7 @@
   <div class="about-me">
     <h1>Welcome</h1>
  
-<p>This site was originally formed from expeirmenting with Docker and Nginx. This experiment has transformed into a dedicated platform for showcasing my latest work. Yet, the site in itself, is stil an expeirment.    </p>
+<p>This site was originally formed from expeirmenting with Docker and Nginx. This experiment has transformed into a dedicated platform for showcasing my latest personal projects and journaling my recent insights. Yet, the site in itself, is stil an expeirment and in a perpetual state of construction.    </p>
 
 <a href="https://github.com/enigmatized/TheDarwinianDilemma_EvolveOrEvaporate">Check out the code</a>
 <!--
